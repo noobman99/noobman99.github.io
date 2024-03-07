@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software Developer Portfolio</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Header Section -->
+    <header class="bg-white border-b border-gray-300">
+      <!-- Navigation Menu -->
+      <nav
+        class="container mx-auto flex items-center justify-between flex-wrap p-6"
+      >
+        <div class="flex items-center flex-shrink-0 text-black mr-6">
+          <span class="font-semibold text-xl tracking-tight">
+            Software Developer Portfolio
+          </span>
+        </div>
+        <div class="block lg:hidden">
+          <button
+            id="nav-toggle"
+            class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-black hover:border-black"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
+          id="nav-content"
+        >
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a
+                href="#home"
+                class="inline-block text-black no-underline hover:text-gray-800 hover:underline py-2 text-base md:text-lg lg:text-lg mr-3"
+                >Home</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                href="#about"
+                class="inline-block text-black no-underline hover:text-gray-800 hover:underline py-2 text-base md:text-lg lg:texlg mr-3"
+                >About</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                href="#projects"
+                class="inline-block text-black no-underline hover:text-gray-800 hover:underline py-2 text-base md:text-lg lg:texlg mr-3"
+                >Projects</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                href="#contact"
+                class="inline-block text-black no-underline hover:text-gray-800 hover:underline py-2 text-base md:text-lg lg:texlg mr-3"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="py-20 bg-gradient-to-b from-blue-400 to-blue-700 text-white"
+    >
+      <!-- Hero Content -->
+      <div
+        class="container mx-auto px-4 lg:px-8 flex flex-col lg:flex-row items-center justify-between"
+      >
+        <!-- Image of the person -->
+        <div class="lg:w-1/2 mb-10 lg:mb-0 lg:ml-6">
+          <img
+            src="https://via.placeholder.com/400"
+            alt="Person"
+            class="rounded-lg shadow-xl"
+          />
+        </div>
+        <!-- Text Content -->
+        <div class="lg:w-1/2 lg:pl-8">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            Software Developer Portfolio
+          </h1>
+          <p class="text-lg md:text-xl lg:text-2xl mb-8">
+            Welcome to my portfolio website.
+          </p>
+          <!-- Call to action button -->
+          <a
+            href="#projects"
+            class="bg-white text-blue-700 font-bold py-2 px-4 rounded text-lg md:text-xl lg:text-xl"
+            >View Projects</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-200 py-20 px-6 lg:px-20">
+      <!-- About Content -->
+      <div class="container mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
+          About Me
+        </h2>
+        <p class="text-base md:text-lg lg:text-xl mb-8">
+          Brief summary about yourself.
+        </p>
+        <!-- Skills Section -->
+        <div class="container mx-auto text-left">
+          <h3 class="text-lg md:text-xl lg:text-2xl font-bold mb-4">Skills</h3>
+          <ul class="flex flex-wrap items-center gap-4">
+            <!-- Skill 1 -->
+            <li
+              class="flex items-center bg-white text-gray-800 font-bold py-2 px-4 rounded-lg shadow-lg"
+            >
+              <svg
+                class="w-6 h-6 mr-2 fill-current text-green-500"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+              </svg>
+              Skill 1
+            </li>
+            <!-- Skill 2 -->
+            <li
+              class="flex items-center bg-white text-gray-800 font-bold py-2 px-4 rounded-lg shadow-lg"
+            >
+              <svg
+                class="w-6 h-6 mr-2 fill-current text-indigo-500 animate-spin"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 4a8 8 0 0 0-8 8h2a6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-3.08 5.216c.594-.255 1.13-.634 1.605-1.11l1.415 1.415A7.932 7.932 0 0 0 20 12c0-4.418-3.582-8-8-8z"
+                />
+              </svg>
+              Skill 2
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-100 py-20 mx-8 lg:mx-20">
+      <!-- Projects Content laptop view -->
+      <div class="container mx-auto text-center hidden lg:block">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
+          Projects
+        </h2>
+        <!-- Project Timeline -->
+        <div class="relative wrap overflow-hidden p-10 h-full">
+          <div
+            class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
+            style="left: 50%"
+          ></div>
+          <!-- Left projects -->
+          <div
+            class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+          >
+            <div class="order-1 w-5/12"></div>
+            <div
+              class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full"
+            >
+              <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+            </div>
+            <div
+              class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 flex items-center"
+            >
+              <div class="h-full aspect-square">
+                <img
+                  class="h-full aspect-square rounded-lg"
+                  src="https://via.placeholder.com/400"
+                  alt="Project 1"
+                />
+              </div>
+              <div class="px-6">
+                <h3 class="mb-3 font-bold text-gray-800 text-lg">
+                  Project Title 1
+                </h3>
+                <p
+                  class="text-base leading-snug tracking-wide text-gray-900 text-opacity-100"
+                >
+                  Brief description of Project 1. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit.
+                </p>
+                <a href="#" class="block mt-4 text-blue-500 hover:underline"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Right projects -->
+          <div
+            class="mb-8 flex justify-between items-center w-full right-timeline"
+          >
+            <div class="order-1 w-5/12"></div>
+            <div
+              class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full"
+            >
+              <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
+            </div>
+            <div
+              class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 flex items-center"
+            >
+              <div class="w-1/2">
+                <img
+                  class="w-full h-auto rounded-lg"
+                  src="https://via.placeholder.com/400"
+                  alt="Project 2"
+                />
+              </div>
+              <div class="w-1/2 px-6">
+                <h3 class="mb-3 font-bold text-gray-800 text-lg">
+                  Project Title 2
+                </h3>
+                <p
+                  class="text-base leading-snug tracking-wide text-gray-900 text-opacity-100"
+                >
+                  Brief description of Project 2. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit.
+                </p>
+                <a href="#" class="block mt-4 text-blue-500 hover:underline"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- left again -->
+          <div
+            class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+          >
+            <div class="order-1 w-5/12"></div>
+            <div
+              class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full"
+            >
+              <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+            </div>
+            <div
+              class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 flex items-center"
+            >
+              <div class="w-1/2">
+                <img
+                  class="w-full h-auto rounded-lg"
+                  src="project3.jpg"
+                  alt="Project 3"
+                />
+              </div>
+              <div class="w-1/2 px-6">
+                <h3 class="mb-3 font-bold text-gray-800 text-lg">
+                  Project Title 3
+                </h3>
+                <p
+                  class="text-base leading-snug tracking-wide text-gray-900 text-opacity-100"
+                >
+                  Brief description of Project 3. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit.
+                </p>
+                <a href="#" class="block mt-4 text-blue-500 hover:underline"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Add more projects as needed -->
+        </div>
+      </div>
+      <!-- Projects Content mobile view -->
+      <div class="container mx-auto text-center lg:hidden">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
+          Projects
+        </h2>
+        <!-- Project Cards -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
+        >
+          <!-- Project 1 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              class="w-full h-64 object-cover object-center"
+              src="project1.jpg"
+              alt="Project 1"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Project 1</h3>
+              <p class="text-gray-700">Brief description of Project 1.</p>
+              <a href="#" class="block mt-4 text-blue-500 hover:underline"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              class="w-full h-64 object-cover object-center"
+              src="project2.jpg"
+              alt="Project 2"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Project 2</h3>
+              <p class="text-gray-700">Brief description of Project 2.</p>
+              <a href="#" class="block mt-4 text-blue-500 hover:underline"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img
+              class="w-full h-64 object-cover object-center"
+              src="project3.jpg"
+              alt="Project 3"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Project 3</h3>
+              <p class="text-gray-700">Brief description of Project 3.</p>
+              <a href="#" class="block mt-4 text-blue-500 hover:underline"
+                >View Project</a
+              >
+            </div>
+          </div>
+          <!-- Add more projects as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="bg-gray-300 py-20 px-6 lg:px-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
+          Contact Me
+        </h2>
+        <p class="text-base md:text-lg mb-6">
+          Have a project in mind or want to discuss something? Feel free to get
+          in touch!
+        </p>
+        <!-- Contact Information and Form -->
+        <div
+          class="flex flex-col md:flex-row md:justify-between md:items-start"
+        >
+          <!-- Contact Information -->
+          <div class="max-w-lg mx-auto md:w-1/2 mb-8 md:mb-0 text-center">
+            <p class="text-lg mb-3 mt-4 font-semibold">Contact Information</p>
+            <ul>
+              <li><strong>Email:</strong> example@example.com</li>
+              <li><strong>Phone:</strong> +1234567890</li>
+              <li><strong>Address:</strong> 123 Street, City, Country</li>
+            </ul>
+            <p class="text-lg mb-2 mt-6 font-semibold">Connect on:</p>
+            <ul class="flex justify-center text-2xl">
+              <li class="mr-6">
+                <a href="#" class="text-blue-500 hover:text-blue-700"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="mr-6">
+                <a href="#" class="text-blue-500 hover:text-blue-700"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+              </li>
+              <li class="mr-6">
+                <a href="#" class="text-black-500 hover:text-black-700"
+                  ><i class="fa fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- Contact Form -->
+          <div class="max-w-lg w-11/12 mx-auto md:w-1/2">
+            <form action="#" method="POST" class="flex flex-col items-center">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="w-11/12 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="w-11/12 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+              <textarea
+                placeholder="Your Message"
+                rows="4"
+                class="w-11/12 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-8 rounded-lg transition duration-300 ease-in-out"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+      <!-- Navigation Links -->
+      <nav class="container mx-auto">
+        <ul class="list-inline">
+          <li class="inline-block mx-4">
+            <a href="#home" class="hover:text-blue-400">Home</a>
+          </li>
+          <li class="inline-block mx-4">
+            <a href="#about" class="hover:text-blue-400">About</a>
+          </li>
+          <li class="inline-block mx-4">
+            <a href="#projects" class="hover:text-blue-400">Projects</a>
+          </li>
+          <li class="inline-block mx-4">
+            <a href="#contact" class="hover:text-blue-400">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Copyright Information -->
+      <p class="mt-2">&copy; 2024 Your Name</p>
+    </footer>
+  </body>
+</html>
