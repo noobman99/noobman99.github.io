@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software Developer Portfolio</title>
-    <!-- Include Tailwind CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
+
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "selector",
+      };
+    </script>
   </head>
-  <body class="bg-gray-100 font-sans leading-normal tracking-normal">
+  <body
+    class="bg-gray-100 dark:bg-gray-800 dark:text-gray-300 font-sans leading-normal tracking-normal"
+  >
     <!-- Header Section -->
-    <header class="bg-white border-b border-gray-300">
+    <header
+      class="bg-white border-b border-gray-300 dark:bg-gray-700 dark:border-gray-600"
+    >
       <!-- Navigation Menu -->
       <nav
         class="container mx-auto flex items-center justify-between flex-wrap p-6"
@@ -30,7 +41,7 @@
         <div class="block lg:hidden">
           <button
             id="nav-toggle"
-            class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-black hover:border-black"
+            class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 dark:text-gray-300 dark:border-gray-300"
           >
             <svg
               class="fill-current h-3 w-3"
@@ -50,28 +61,28 @@
             <li class="mr-3">
               <a
                 href="#home"
-                class="inline-block text-black no-underline hover:text-gray-800 hover:underline py-2 text-base md:text-lg lg:text-lg mr-3"
+                class="inline-block text-black dark:text-white no-underline hover:text-gray-800 hover:underline py-2 text-base md:text-lg lg:text-lg mr-3"
                 >Home</a
               >
             </li>
             <li class="mr-3">
               <a
                 href="#about"
-                class="inline-block text-black no-underline hover:text-gray-800 hover:underline py-2 text-base md:text-lg lg:texlg mr-3"
+                class="inline-block text-black dark:text-white no-underline hover:text-gray-800 hover:underline py-2 text-base md:text-lg lg:text-lg mr-3"
                 >About</a
               >
             </li>
             <li class="mr-3">
               <a
                 href="#projects"
-                class="inline-block text-black no-underline hover:text-gray-800 hover:underline py-2 text-base md:text-lg lg:texlg mr-3"
+                class="inline-block text-black dark:text-white no-underline hover:text-gray-800 hover:underline py-2 text-base md:text-lg lg:text-lg mr-3"
                 >Projects</a
               >
             </li>
             <li class="mr-3">
               <a
                 href="#contact"
-                class="inline-block text-black no-underline hover:text-gray-800 hover:underline py-2 text-base md:text-lg lg:texlg mr-3"
+                class="inline-block text-black dark:text-white no-underline hover:text-gray-800 hover:underline py-2 text-base md:text-lg lg:text-lg mr-3"
                 >Contact</a
               >
             </li>
@@ -83,7 +94,7 @@
     <!-- Hero Section -->
     <section
       id="home"
-      class="py-20 bg-gradient-to-b from-blue-400 to-blue-700 text-white"
+      class="py-20 bg-gradient-to-b from-blue-400 to-blue-700 text-white dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-900"
     >
       <!-- Hero Content -->
       <div
@@ -108,7 +119,7 @@
           <!-- Call to action button -->
           <a
             href="#projects"
-            class="bg-white text-blue-700 font-bold py-2 px-4 rounded text-lg md:text-xl lg:text-xl"
+            class="bg-white text-blue-700 dark:bg-gray-600 dark:text-white font-bold py-2 px-4 rounded text-lg md:text-xl lg:text-xl"
             >View Projects</a
           >
         </div>
@@ -116,7 +127,10 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="bg-gray-200 py-20 px-6 lg:px-20">
+    <section
+      id="about"
+      class="bg-gray-200 py-20 px-6 lg:px-20 dark:bg-gray-600"
+    >
       <!-- About Content -->
       <div class="container mx-auto text-center">
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
@@ -127,11 +141,15 @@
         </p>
         <!-- Skills Section -->
         <div class="container mx-auto text-left">
-          <h3 class="text-lg md:text-xl lg:text-2xl font-bold mb-4">Skills</h3>
+          <h3
+            class="text-lg md:text-xl lg:text-2xl font-bold mb-4 text-black dark:text-white"
+          >
+            Skills
+          </h3>
           <ul class="flex flex-wrap items-center gap-4">
             <!-- Skill 1 -->
             <li
-              class="flex items-center bg-white text-gray-800 font-bold py-2 px-4 rounded-lg shadow-lg"
+              class="flex items-center bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-300 font-bold py-2 px-4 rounded-lg shadow-lg"
             >
               <svg
                 class="w-6 h-6 mr-2 fill-current text-green-500"
@@ -145,7 +163,7 @@
             </li>
             <!-- Skill 2 -->
             <li
-              class="flex items-center bg-white text-gray-800 font-bold py-2 px-4 rounded-lg shadow-lg"
+              class="flex items-center bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-300 font-bold py-2 px-4 rounded-lg shadow-lg"
             >
               <svg
                 class="w-6 h-6 mr-2 fill-current text-indigo-500 animate-spin"
@@ -165,16 +183,21 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="bg-gray-100 py-20 mx-8 lg:mx-20">
+    <section
+      id="projects"
+      class="bg-gray-100 py-20 px-6 lg:px-20 dark:bg-gray-700"
+    >
       <!-- Projects Content laptop view -->
       <div class="container mx-auto text-center hidden lg:block">
-        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
+        <h2
+          class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-black dark:text-white"
+        >
           Projects
         </h2>
         <!-- Project Timeline -->
         <div class="relative wrap overflow-hidden p-10 h-full">
           <div
-            class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
+            class="border-2-2 absolute border-opacity-20 border-gray-700 dark:border-gray-600 h-full border"
             style="left: 50%"
           ></div>
           <!-- Left projects -->
@@ -183,12 +206,12 @@
           >
             <div class="order-1 w-5/12"></div>
             <div
-              class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full"
+              class="z-20 flex items-center order-1 bg-gray-800 dark:bg-gray-800 shadow-xl w-8 h-8 rounded-full"
             >
               <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
             </div>
             <div
-              class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 flex items-center"
+              class="order-1 bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-xl w-5/12 px-6 py-4 flex items-center"
             >
               <div class="h-full aspect-square">
                 <img
@@ -198,11 +221,13 @@
                 />
               </div>
               <div class="px-6">
-                <h3 class="mb-3 font-bold text-gray-800 text-lg">
+                <h3
+                  class="mb-3 font-bold text-gray-800 text-lg dark:text-white"
+                >
                   Project Title 1
                 </h3>
                 <p
-                  class="text-base leading-snug tracking-wide text-gray-900 text-opacity-100"
+                  class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
                 >
                   Brief description of Project 1. Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit.
@@ -219,12 +244,12 @@
           >
             <div class="order-1 w-5/12"></div>
             <div
-              class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full"
+              class="z-20 flex items-center order-1 bg-gray-800 dark:bg-gray-800 shadow-xl w-8 h-8 rounded-full"
             >
               <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
             </div>
             <div
-              class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 flex items-center"
+              class="order-1 bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-xl w-5/12 px-6 py-4 flex items-center"
             >
               <div class="w-1/2">
                 <img
@@ -234,11 +259,13 @@
                 />
               </div>
               <div class="w-1/2 px-6">
-                <h3 class="mb-3 font-bold text-gray-800 text-lg">
+                <h3
+                  class="mb-3 font-bold text-gray-800 text-lg dark:text-white"
+                >
                   Project Title 2
                 </h3>
                 <p
-                  class="text-base leading-snug tracking-wide text-gray-900 text-opacity-100"
+                  class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
                 >
                   Brief description of Project 2. Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit.
@@ -255,12 +282,12 @@
           >
             <div class="order-1 w-5/12"></div>
             <div
-              class="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full"
+              class="z-20 flex items-center order-1 bg-gray-800 dark:bg-gray-800 shadow-xl w-8 h-8 rounded-full"
             >
               <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
             </div>
             <div
-              class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4 flex items-center"
+              class="order-1 bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-xl w-5/12 px-6 py-4 flex items-center"
             >
               <div class="w-1/2">
                 <img
@@ -270,11 +297,13 @@
                 />
               </div>
               <div class="w-1/2 px-6">
-                <h3 class="mb-3 font-bold text-gray-800 text-lg">
+                <h3
+                  class="mb-3 font-bold text-gray-800 text-lg dark:text-white"
+                >
                   Project Title 3
                 </h3>
                 <p
-                  class="text-base leading-snug tracking-wide text-gray-900 text-opacity-100"
+                  class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
                 >
                   Brief description of Project 3. Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit.
@@ -290,7 +319,9 @@
       </div>
       <!-- Projects Content mobile view -->
       <div class="container mx-auto text-center lg:hidden">
-        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
+        <h2
+          class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-black dark:text-white"
+        >
           Projects
         </h2>
         <!-- Project Cards -->
@@ -298,150 +329,142 @@
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
         >
           <!-- Project 1 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div
+            class="bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-lg overflow-hidden"
+          >
             <img
-              class="w-full h-64 object-cover object-center"
-              src="project1.jpg"
+              class="w-full h-auto rounded-lg"
+              src="https://via.placeholder.com/400"
               alt="Project 1"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Project 1</h3>
-              <p class="text-gray-700">Brief description of Project 1.</p>
+              <h3 class="mb-3 font-bold text-gray-800 text-lg dark:text-white">
+                Project Title 1
+              </h3>
+              <p
+                class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
+              >
+                Brief description of Project 1. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+              </p>
               <a href="#" class="block mt-4 text-blue-500 hover:underline"
                 >View Project</a
               >
             </div>
           </div>
           <!-- Project 2 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div
+            class="bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-lg overflow-hidden"
+          >
             <img
-              class="w-full h-64 object-cover object-center"
-              src="project2.jpg"
+              class="w-full h-auto rounded-lg"
+              src="https://via.placeholder.com/400"
               alt="Project 2"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Project 2</h3>
-              <p class="text-gray-700">Brief description of Project 2.</p>
+              <h3 class="mb-3 font-bold text-gray-800 text-lg dark:text-white">
+                Project Title 2
+              </h3>
+              <p
+                class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
+              >
+                Brief description of Project 2. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+              </p>
               <a href="#" class="block mt-4 text-blue-500 hover:underline"
                 >View Project</a
               >
             </div>
           </div>
           <!-- Project 3 -->
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <div
+            class="bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-lg overflow-hidden"
+          >
             <img
-              class="w-full h-64 object-cover object-center"
-              src="project3.jpg"
+              class="w-full h-auto rounded-lg"
+              src="https://via.placeholder.com/400"
               alt="Project 3"
             />
             <div class="p-6">
-              <h3 class="text-xl font-bold mb-2">Project 3</h3>
-              <p class="text-gray-700">Brief description of Project 3.</p>
+              <h3 class="mb-3 font-bold text-gray-800 text-lg dark:text-white">
+                Project Title 3
+              </h3>
+              <p
+                class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
+              >
+                Brief description of Project 3. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.
+              </p>
               <a href="#" class="block mt-4 text-blue-500 hover:underline"
                 >View Project</a
               >
             </div>
           </div>
-          <!-- Add more projects as needed -->
         </div>
       </div>
     </section>
 
-    <!-- Contact Me Section -->
-    <section id="contact" class="bg-gray-300 py-20 px-6 lg:px-20">
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="bg-gray-300 py-20 px-6 lg:px-20 dark:bg-gray-600 dark:text-white"
+    >
+      <!-- Contact Content -->
       <div class="container mx-auto text-center">
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
           Contact Me
         </h2>
-        <p class="text-base md:text-lg mb-6">
-          Have a project in mind or want to discuss something? Feel free to get
-          in touch!
+        <p class="text-base md:text-lg lg:text-xl mb-8">
+          Feel free to reach out to me for any inquiries or collaborations.
         </p>
-        <!-- Contact Information and Form -->
-        <div
-          class="flex flex-col md:flex-row md:justify-between md:items-start"
-        >
-          <!-- Contact Information -->
-          <div class="max-w-lg mx-auto md:w-1/2 mb-8 md:mb-0 text-center">
-            <p class="text-lg mb-3 mt-4 font-semibold">Contact Information</p>
-            <ul>
-              <li><strong>Email:</strong> example@example.com</li>
-              <li><strong>Phone:</strong> +1234567890</li>
-              <li><strong>Address:</strong> 123 Street, City, Country</li>
-            </ul>
-            <p class="text-lg mb-2 mt-6 font-semibold">Connect on:</p>
-            <ul class="flex justify-center text-2xl">
-              <li class="mr-6">
-                <a href="#" class="text-blue-500 hover:text-blue-700"
-                  ><i class="fa fa-linkedin"></i
-                ></a>
-              </li>
-              <li class="mr-6">
-                <a href="#" class="text-blue-500 hover:text-blue-700"
-                  ><i class="fa fa-twitter"></i
-                ></a>
-              </li>
-              <li class="mr-6">
-                <a href="#" class="text-black-500 hover:text-black-700"
-                  ><i class="fa fa-github"></i
-                ></a>
-              </li>
-            </ul>
+        <!-- Contact Form -->
+        <form class="mx-auto max-w-lg">
+          <div class="mb-6">
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="block w-full bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600 border-gray-400 dark:focus:ring-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-200 focus:border-gray-500"
+            />
           </div>
-          <!-- Contact Form -->
-          <div class="max-w-lg w-11/12 mx-auto md:w-1/2">
-            <form action="#" method="POST" class="flex flex-col items-center">
-              <input
-                type="text"
-                placeholder="Your Name"
-                class="w-11/12 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                class="w-11/12 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              />
-              <textarea
-                placeholder="Your Message"
-                rows="4"
-                class="w-11/12 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              ></textarea>
-              <button
-                type="submit"
-                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-8 rounded-lg transition duration-300 ease-in-out"
-              >
-                Send Message
-              </button>
-            </form>
+          <div class="mb-6">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="block w-full bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600 border-gray-400 dark:focus:ring-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-200 focus:border-gray-500"
+            />
           </div>
-        </div>
+          <div class="mb-6">
+            <textarea
+              rows="5"
+              placeholder="Your Message"
+              class="block w-full bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600 border-gray-400 dark:focus:ring-gray-600 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-200 focus:border-gray-500"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-500 text-white active:bg-blue-600 dark:bg-gray-800 dark:text-white font-bold uppercase text-lg px-8 py-3 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 w-full"
+          >
+            Send Message
+          </button>
+        </form>
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center py-6">
-      <!-- Navigation Links -->
-      <nav class="container mx-auto">
-        <ul class="list-inline">
-          <li class="inline-block mx-4">
-            <a href="#home" class="hover:text-blue-400">Home</a>
-          </li>
-          <li class="inline-block mx-4">
-            <a href="#about" class="hover:text-blue-400">About</a>
-          </li>
-          <li class="inline-block mx-4">
-            <a href="#projects" class="hover:text-blue-400">Projects</a>
-          </li>
-          <li class="inline-block mx-4">
-            <a href="#contact" class="hover:text-blue-400">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Copyright Information -->
-      <p class="mt-2">&copy; 2024 Your Name</p>
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 py-6">
+      <div class="container mx-auto text-center text-white">
+        <p>&copy; 2024 Software Developer Portfolio. All rights reserved.</p>
+      </div>
     </footer>
+
+    <!-- JavaScript for mobile navigation -->
+    <script>
+      const navToggle = document.getElementById("nav-toggle");
+      const navContent = document.getElementById("nav-content");
+
+      navToggle.addEventListener("click", () => {
+        navContent.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
