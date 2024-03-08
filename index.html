@@ -21,6 +21,7 @@
         darkMode: "selector",
       };
     </script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body
     class="bg-gray-100 dark:bg-gray-800 dark:text-gray-300 font-sans leading-normal tracking-normal"
@@ -187,7 +188,7 @@
     <!-- Projects Section -->
     <section
       id="projects"
-      class="bg-gray-100 py-20 px-6 lg:px-20 dark:bg-gray-700"
+      class="bg-gray-100 py-20 px-6 xl:px-20 lg:px-5 dark:bg-gray-700"
     >
       <!-- Projects Content laptop view -->
       <div class="container mx-auto text-center hidden lg:block">
@@ -212,31 +213,60 @@
             >
               <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
             </div>
-            <div
-              class="order-1 bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-xl w-5/12 px-6 py-4 flex items-center"
-            >
-              <div class="h-full aspect-square">
-                <img
-                  class="h-full aspect-square rounded-lg"
-                  src="https://via.placeholder.com/400"
-                  alt="Project 1"
-                />
-              </div>
-              <div class="px-6">
-                <h3
-                  class="mb-3 font-bold text-gray-800 text-lg dark:text-white"
+            <div class="order-1 w-5/12 flip-card flip-X">
+              <div class="flip-card-inner">
+                <div
+                  class="bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-xl px-4 py-4 flex items-center flip-card-front"
                 >
-                  Project Title 1
-                </h3>
-                <p
-                  class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
+                  <img
+                    class="h-full xl:max-h-44 lg:max-h-28 aspect-square rounded-lg"
+                    src="https://via.placeholder.com/400"
+                    alt="Project 1"
+                  />
+                  <div class="px-4 py-2">
+                    <h3
+                      class="mb-3 font-bold text-gray-800 text-lg dark:text-white"
+                    >
+                      Project Title 1
+                    </h3>
+                    <p
+                      class="text-sm xl:text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
+                    >
+                      Brief description of Project 1. Lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-xl px-4 py-4 flex flex-col items-center justify-evenly flip-card-back"
                 >
-                  Brief description of Project 1. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <a href="#" class="block mt-4 text-blue-500 hover:underline"
-                  >View Project</a
-                >
+                  <!-- Place to add more about the project -->
+                  <a href="#" class="block mt-4 text-blue-500 hover:underline"
+                    >View Project</a
+                  >
+                </div>
+
+                <div class="z-0 invisible px-4 py-4 flex items-center">
+                  <img
+                    class="h-full xl:max-h-44 lg:max-h-28 aspect-square rounded-lg"
+                    src="https://via.placeholder.com/400"
+                    alt="Project 1"
+                  />
+                  <div class="px-4 py-2">
+                    <h3
+                      class="mb-3 font-bold text-gray-800 text-lg dark:text-white"
+                    >
+                      Project Title 1
+                    </h3>
+                    <p
+                      class="text-sm xl:text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
+                    >
+                      Brief description of Project 1. Lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -250,69 +280,60 @@
             >
               <h1 class="mx-auto font-semibold text-lg text-white">2</h1>
             </div>
-            <div
-              class="order-1 bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-xl w-5/12 px-6 py-4 flex items-center"
-            >
-              <div class="w-1/2">
-                <img
-                  class="w-full h-auto rounded-lg"
-                  src="https://via.placeholder.com/400"
-                  alt="Project 2"
-                />
-              </div>
-              <div class="w-1/2 px-6">
-                <h3
-                  class="mb-3 font-bold text-gray-800 text-lg dark:text-white"
+            <div class="order-1 w-5/12 flip-card flip-X">
+              <div class="flip-card-inner">
+                <div
+                  class="bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-xl px-4 py-4 flex items-center flip-card-front"
                 >
-                  Project Title 2
-                </h3>
-                <p
-                  class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
+                  <img
+                    class="h-full xl:max-h-44 lg:max-h-28 aspect-square rounded-lg"
+                    src="https://via.placeholder.com/400"
+                    alt="Project 2"
+                  />
+                  <div class="px-4 py-2">
+                    <h3
+                      class="mb-3 font-bold text-gray-800 text-lg dark:text-white"
+                    >
+                      Project Title 2
+                    </h3>
+                    <p
+                      class="text-sm xl:text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
+                    >
+                      Brief description of Project 2. Lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-xl px-4 py-4 flex flex-col items-center justify-evenly flip-card-back"
                 >
-                  Brief description of Project 2. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <a href="#" class="block mt-4 text-blue-500 hover:underline"
-                  >View Project</a
-                >
-              </div>
-            </div>
-          </div>
-          <!-- left again -->
-          <div
-            class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
-          >
-            <div class="order-1 w-5/12"></div>
-            <div
-              class="z-20 flex items-center order-1 bg-gray-800 dark:bg-gray-800 shadow-xl w-8 h-8 rounded-full"
-            >
-              <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
-            </div>
-            <div
-              class="order-1 bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-xl w-5/12 px-6 py-4 flex items-center"
-            >
-              <div class="w-1/2">
-                <img
-                  class="w-full h-auto rounded-lg"
-                  src="project3.jpg"
-                  alt="Project 3"
-                />
-              </div>
-              <div class="w-1/2 px-6">
-                <h3
-                  class="mb-3 font-bold text-gray-800 text-lg dark:text-white"
-                >
-                  Project Title 3
-                </h3>
-                <p
-                  class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
-                >
-                  Brief description of Project 3. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                </p>
-                <a href="#" class="block mt-4 text-blue-500 hover:underline"
-                  >View Project</a
-                >
+                  <!-- Place to add more about the project -->
+                  <a href="#" class="block mt-4 text-blue-500 hover:underline"
+                    >View Project</a
+                  >
+                </div>
+
+                <div class="z-0 invisible px-4 py-4 flex items-center">
+                  <img
+                    class="h-full xl:max-h-44 lg:max-h-28 aspect-square rounded-lg"
+                    src="https://via.placeholder.com/400"
+                    alt="Project 2"
+                  />
+                  <div class="px-4 py-2">
+                    <h3
+                      class="mb-3 font-bold text-gray-800 text-lg dark:text-white"
+                    >
+                      Project Title 2
+                    </h3>
+                    <p
+                      class="text-sm xl:text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
+                    >
+                      Brief description of Project 2. Lorem ipsum dolor sit
+                      amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -328,78 +349,68 @@
         </h2>
         <!-- Project Cards -->
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
+          class="grid grid-cols-1 justify-items-center sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8"
         >
           <!-- Project 1 -->
-          <div
-            class="bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-lg overflow-hidden"
-          >
-            <img
-              class="w-full h-auto rounded-lg"
-              src="https://via.placeholder.com/400"
-              alt="Project 1"
-            />
-            <div class="p-6">
-              <h3 class="mb-3 font-bold text-gray-800 text-lg dark:text-white">
-                Project Title 1
-              </h3>
-              <p
-                class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
+          <div class="flip-card flip-Y max-w-sm">
+            <div class="flip-card-inner">
+              <div
+                class="flip-card-front bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-lg overflow-hidden"
               >
-                Brief description of Project 1. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-              </p>
-              <a href="#" class="block mt-4 text-blue-500 hover:underline"
-                >View Project</a
+                <img
+                  class="w-full h-auto rounded-lg"
+                  src="https://via.placeholder.com/400"
+                  alt="Project 1"
+                />
+                <div class="p-6">
+                  <h3
+                    class="mb-3 font-bold text-gray-800 text-lg dark:text-white"
+                  >
+                    Project Title 1
+                  </h3>
+                  <p
+                    class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
+                  >
+                    Brief description of Project 1. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                  </p>
+                  <a href="#" class="block mt-4 text-blue-500 hover:underline"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <div
+                class="flip-card-back bg-white dark:bg-gray-800 dark:text-white flex flex-col justify-evenly rounded-lg shadow-lg overflow-hidden"
               >
-            </div>
-          </div>
-          <!-- Project 2 -->
-          <div
-            class="bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-lg overflow-hidden"
-          >
-            <img
-              class="w-full h-auto rounded-lg"
-              src="https://via.placeholder.com/400"
-              alt="Project 2"
-            />
-            <div class="p-6">
-              <h3 class="mb-3 font-bold text-gray-800 text-lg dark:text-white">
-                Project Title 2
-              </h3>
-              <p
-                class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
-              >
-                Brief description of Project 2. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-              </p>
-              <a href="#" class="block mt-4 text-blue-500 hover:underline"
-                >View Project</a
-              >
-            </div>
-          </div>
-          <!-- Project 3 -->
-          <div
-            class="bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-lg overflow-hidden"
-          >
-            <img
-              class="w-full h-auto rounded-lg"
-              src="https://via.placeholder.com/400"
-              alt="Project 3"
-            />
-            <div class="p-6">
-              <h3 class="mb-3 font-bold text-gray-800 text-lg dark:text-white">
-                Project Title 3
-              </h3>
-              <p
-                class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
-              >
-                Brief description of Project 3. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit.
-              </p>
-              <a href="#" class="block mt-4 text-blue-500 hover:underline"
-                >View Project</a
-              >
+                <!-- Place to add more about the project -->
+                <a href="#" class="block mt-4 text-blue-500 hover:underline"
+                  >View Project</a
+                >
+              </div>
+
+              <div class="invisible z-0">
+                <img
+                  class="w-full h-auto rounded-lg"
+                  src="https://via.placeholder.com/400"
+                  alt="Project 1"
+                />
+                <div class="p-6">
+                  <h3
+                    class="mb-3 font-bold text-gray-800 text-lg dark:text-white"
+                  >
+                    Project Title 1
+                  </h3>
+                  <p
+                    class="text-base leading-snug tracking-wide text-gray-900 dark:text-gray-300"
+                  >
+                    Brief description of Project 1. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                  </p>
+                  <a href="#" class="block mt-4 text-blue-500 hover:underline"
+                    >View Project</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
