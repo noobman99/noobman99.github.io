@@ -28,6 +28,12 @@ nav a:hover::after {
   min-height: min(calc(100svh - 76px), 640px);
 }
 
+@media (min-width: 768px) {
+  #home {
+    min-height: min(calc(100svh - 92px), 640px);
+  }
+}
+
 .h-less-20 {
   height: calc(100% - 80px);
 }
@@ -67,8 +73,34 @@ nav a:hover::after {
   transform: rotateY(-180deg);
 }
 
-@media (min-width: 768px) {
-  #home {
-    min-height: min(calc(100svh - 92px), 640px);
-  }
+/* Colors for the Tech Stack logos */
+
+/* HTML */
+.fa-html5 {
+  color: #e34f26;
+}
+
+/* CSS */
+.fa-css3-alt {
+  color: #1572b6;
+}
+
+/* JavaScript */
+.fa-js {
+  color: #f7df1e;
+}
+
+/* React */
+.fa-react {
+  color: #61dafb;
+}
+
+/* Node.js */
+.fa-node-js {
+  color: #3c873a;
+}
+
+/* Python */
+.fa-python {
+  color: #306998;
 }
