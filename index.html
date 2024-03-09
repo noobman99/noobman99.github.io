@@ -16,6 +16,12 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Include AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Include custom CSS and JS -->
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts.js" type="module"></script>
   </head>
@@ -111,20 +117,29 @@
             src="https://via.placeholder.com/400"
             alt="Person"
             class="rounded-lg shadow-xl"
+            data-aos="fade-up"
+            data-aos-duration="1600"
           />
         </div>
         <!-- Text Content -->
         <div class="lg:w-1/2 lg:pl-8">
-          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h1
+            class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
+            data-aos="fade"
+            data-aos-duration="1400"
+          >
             Hello there,
           </h1>
-          <p class="text-lg md:text-xl lg:text-2xl mb-8">
-            I am Parth, a coding enthusiast.
+          <p class="text-lg md:text-xl lg:text-2xl mb-8" id="typing-effect">
+            <span class="invisible overflow-hidden">I</span>
           </p>
           <!-- Call to action button -->
           <a
             href="#projects"
             class="bg-white text-blue-700 font-bold py-2 px-4 rounded text-lg md:text-xl lg:text-xl hover:bg-blue-800 dark:hover:bg-blue-600 hover:text-white transition-300"
+            data-aos="fade"
+            data-aos-duration="1400"
+            data-aos-delay="2500"
             >View Projects</a
           >
         </div>
@@ -137,7 +152,7 @@
       class="bg-gray-200 py-20 px-6 lg:px-20 dark:bg-gray-600"
     >
       <!-- About Content -->
-      <div class="container mx-auto text-center">
+      <div class="container mx-auto text-center" data-aos="fade">
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
           About Me
         </h2>
@@ -164,7 +179,10 @@
       class="bg-gray-100 py-20 px-6 xl:px-20 lg:px-5 dark:bg-gray-700"
     >
       <!-- Projects Content laptop view -->
-      <div class="container mx-auto text-center hidden lg:block">
+      <div
+        class="container mx-auto text-center hidden lg:block"
+        data-aos="fade"
+      >
         <h2
           class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-black dark:text-white"
         >
@@ -183,7 +201,7 @@
         </div>
       </div>
       <!-- Projects Content mobile view -->
-      <div class="container mx-auto text-center lg:hidden">
+      <div class="container mx-auto text-center lg:hidden" data-aos="fade">
         <h2
           class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8 text-black dark:text-white"
         >
@@ -205,7 +223,7 @@
       class="bg-gray-300 py-20 px-6 lg:px-20 dark:bg-gray-600 dark:text-white"
     >
       <!-- Contact Content -->
-      <div class="container mx-auto text-center">
+      <div class="container mx-auto text-center" data-aos="fade">
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold mb-8">
           Contact Me
         </h2>
@@ -305,7 +323,10 @@
     <!-- Project Card Templates -->
     <!-- Desktop View -->
     <template id="project-template-desktop">
-      <div class="mb-8 flex justify-between items-center w-full project-card">
+      <div
+        class="mb-8 flex justify-between items-center w-full project-card"
+        data-aos="fade-up"
+      >
         <div class="order-1 w-5/12"></div>
         <div
           class="z-20 flex items-center order-1 bg-gray-800 dark:bg-gray-800 shadow-xl w-8 h-8 rounded-full"
@@ -385,16 +406,22 @@
     </template>
     <!-- EOJ for desktop view -->
     <template id="project-template-EOJ">
-      <div
-        class="z-20 relative bg-gray-800 dark:bg-gray-800 shadow-lg rounded-full mx-auto px-5 py-2 w-fit font-semibold text-lg text-white"
-      >
-        <i class="far fa-flag pr-1 text-green-500"></i> Start of My Journey :)
-        <!-- <i class="far fa-flag pl-1 text-green-500"></i> -->
+      <div data-aos="fade">
+        <h2
+          class="z-20 relative bg-gray-800 dark:bg-gray-800 shadow-lg rounded-full mx-auto px-5 py-2 w-fit text-lg text-white"
+        >
+          <i class="far fa-flag pr-1 text-green-500"></i> Start of My Journey :)
+          <!-- <i class="far fa-flag pl-1 text-green-500"></i> -->
+        </h2>
       </div>
     </template>
     <!-- Mobile View -->
     <template id="project-template-mobile">
-      <div class="flip-card flip-Y max-w-sm">
+      <div
+        class="flip-card flip-Y max-w-sm"
+        data-aos="fade-up"
+        data-aos-delay="0"
+      >
         <div class="flip-card-inner">
           <div
             class="flip-card-front bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-lg overflow-hidden"
@@ -456,6 +483,7 @@
     <template id="skill-proficient-template">
       <li
         class="flex items-center bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-300 font-bold py-2 px-4 rounded-lg shadow-lg"
+        data-aos="fade-zoom-in"
       >
         <svg
           class="w-6 h-6 mr-2 fill-current text-green-500"
@@ -472,6 +500,7 @@
     <template id="skill-learning-template">
       <li
         class="flex items-center bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-300 font-bold py-2 px-4 rounded-lg shadow-lg"
+        data-aos="fade-zoom-in"
       >
         <svg
           class="w-6 h-6 mr-2 fill-current text-indigo-500 animate-spin"

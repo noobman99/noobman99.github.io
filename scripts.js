@@ -82,7 +82,7 @@ function new_project_desktop(data, number) {
   document.getElementById("projects-desktop").appendChild(clone_desktop);
 }
 
-function new_skill(skill, isProficient) {
+function new_skill(skill, isProficient, number) {
   let skill_template;
   if (isProficient) {
     skill_template = document.getElementById("skill-proficient-template");
@@ -94,8 +94,28 @@ function new_skill(skill, isProficient) {
   let skill_span = document.createElement("span");
   skill_span.textContent = skill;
   clone_skill.querySelector("li").appendChild(skill_span);
+  clone_skill
+    .querySelector("li")
+    .setAttribute("data-aos-delay", `${number * 200}`);
 
   document.getElementById("skills-container").appendChild(clone_skill);
+}
+
+function typingEffect() {
+  let i = 1;
+  let txt = "I am Parth, a coding enthusiast.";
+  document.getElementById("typing-effect").textContent = txt.charAt(0);
+  let speed = 50;
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("typing-effect").textContent += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  setTimeout(typeWriter, speed);
 }
 
 function init() {
@@ -104,17 +124,24 @@ function init() {
   for (let i = 0; i < data.projects.length; i++) {
     new_project_mobile(data.projects[i]);
     new_project_desktop(data.projects[i], i + 1);
-    new_skill(`Skill ${i + 1}`, 2 * i < data.projects.length);
+    new_skill(`Skill ${i + 1}`, 2 * i < data.projects.length, i + 1);
   }
 
   const EOJ = document.getElementById("project-template-EOJ");
   const EOJ_clone = EOJ.content.cloneNode(true);
   document.getElementById("projects-desktop").appendChild(EOJ_clone);
 
+  AOS.init({
+    duration: 600,
+    once: true,
+  });
+
   // Tailwind CSS dark mode
   tailwind.config = {
     darkMode: "selector",
   };
+
+  setTimeout(typingEffect, 700);
 
   // Mobile navigation toggle
   const navToggle = document.getElementById("nav-toggle");
