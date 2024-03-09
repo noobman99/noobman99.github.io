@@ -7,8 +7,29 @@ html {
   margin-left: -1.5rem;
 }
 
+nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background: #000;
+  transition: width 0.3s;
+}
+.dark nav a::after {
+  background: #fff;
+}
+
+nav a:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
 #home {
   min-height: min(calc(100svh - 76px), 640px);
+}
+
+.h-less-20 {
+  height: calc(100% - 80px);
 }
 
 .flip-card {

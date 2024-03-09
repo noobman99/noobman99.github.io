@@ -71,7 +71,13 @@ function new_project_desktop(data, number) {
     project_card.classList.add("right-timeline");
   }
 
-  clone_desktop.querySelector("h1").textContent = number;
+  let arrow = document.createElement("i");
+  if (number % 2) {
+    arrow.className = "fas fa-chevron-left";
+  } else {
+    arrow.className = "fas fa-chevron-right";
+  }
+  clone_desktop.querySelector("h1").appendChild(arrow);
 
   document.getElementById("projects-desktop").appendChild(clone_desktop);
 }
@@ -100,6 +106,10 @@ function init() {
     new_project_desktop(data.projects[i], i + 1);
     new_skill(`Skill ${i + 1}`, 2 * i < data.projects.length);
   }
+
+  const EOJ = document.getElementById("project-template-EOJ");
+  const EOJ_clone = EOJ.content.cloneNode(true);
+  document.getElementById("projects-desktop").appendChild(EOJ_clone);
 
   // Tailwind CSS dark mode
   tailwind.config = {
