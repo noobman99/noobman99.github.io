@@ -1,3 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.hr-enlarge {
+  width: calc(100% + 3rem);
+  margin-left: -1.5rem;
+}
+
+#home {
+  min-height: min(calc(100svh - 76px), 640px);
+}
+
 .flip-card {
   background-color: transparent;
   perspective: 1000px;
@@ -31,4 +44,10 @@
 }
 .flip-Y .flip-card-back {
   transform: rotateY(-180deg);
+}
+
+@media (min-width: 768px) {
+  #home {
+    min-height: min(calc(100svh - 92px), 640px);
+  }
 }

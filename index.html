@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Software Developer Portfolio</title>
+    <title>Portfolio</title>
     <!-- Font Awesome -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -16,11 +16,6 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "selector",
-      };
-    </script>
     <link rel="stylesheet" href="styles.css" />
     <script src="scripts.js" type="module"></script>
   </head>
@@ -37,11 +32,7 @@
       >
         <div
           class="flex items-center flex-shrink-0 text-black mr-6 dark:text-gray-300"
-        >
-          <span class="font-semibold text-xl tracking-tight">
-            Software Developer Portfolio
-          </span>
-        </div>
+        ></div>
         <div class="block lg:hidden">
           <button
             id="nav-toggle"
@@ -61,32 +52,42 @@
           class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0"
           id="nav-content"
         >
+          <hr class="lg:hidden border-gray-400 hr-enlarge" />
           <ul class="list-reset lg:flex justify-end flex-1 items-center">
-            <li class="mr-3">
+            <li class="mr-3 text-right">
               <a
-                href="#home"
+                href="#"
                 class="inline-block text-black dark:text-gray-300 no-underline hover:text-gray-800 dark:hover:text-white hover:underline py-2 text-base md:text-lg lg:text-lg mr-3"
                 >Home</a
               >
             </li>
-            <li class="mr-3">
+            <hr
+              class="lg:hidden border-gray-300 dark:border-gray-500 ml-auto mr-3 w-11/12"
+            />
+            <li class="mr-3 text-right">
               <a
                 href="#about"
                 class="inline-block text-black dark:text-gray-300 no-underline hover:text-gray-800 dark:hover:text-white hover:underline py-2 text-base md:text-lg lg:text-lg mr-3"
                 >About</a
               >
             </li>
-            <li class="mr-3">
+            <hr
+              class="lg:hidden border-gray-300 dark:border-gray-500 ml-auto mr-3 w-9/12"
+            />
+            <li class="mr-3 text-right">
               <a
                 href="#projects"
                 class="inline-block text-black dark:text-gray-300 no-underline hover:text-gray-800 dark:hover:text-white hover:underline py-2 text-base md:text-lg lg:text-lg mr-3"
                 >Projects</a
               >
             </li>
-            <li class="mr-3">
+            <hr
+              class="lg:hidden border-gray-300 dark:border-gray-500 ml-auto mr-3 w-7/12"
+            />
+            <li class="mr-3 text-right">
               <a
                 href="#contact"
-                class="inline-block text-black dark:text-gray-300 no-underline hover:text-gray-800 dark:hover:text-white hover:underline py-2 text-base md:text-lg lg:text-lg mr-3"
+                class="inline-block text-black dark:text-gray-300 no-underline hover:text-gray-800 dark:hover:text-white hover:underline py-2 text-base md:text-lg lg:text-lg mr-3 float-right"
                 >Contact</a
               >
             </li>
@@ -115,10 +116,10 @@
         <!-- Text Content -->
         <div class="lg:w-1/2 lg:pl-8">
           <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Software Developer Portfolio
+            Hello there,
           </h1>
           <p class="text-lg md:text-xl lg:text-2xl mb-8">
-            Welcome to my portfolio website.
+            I am Parth, a coding enthusiast.
           </p>
           <!-- Call to action button -->
           <a
@@ -211,36 +212,78 @@
         <p class="text-base md:text-lg lg:text-xl mb-8">
           Feel free to reach out to me for any inquiries or collaborations.
         </p>
-        <!-- Contact Form -->
-        <form class="mx-auto max-w-lg">
-          <div class="mb-6">
-            <input
-              type="text"
-              placeholder="Your Name"
-              class="block w-full bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600 border-gray-400 dark:focus:ring-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-200 focus:border-gray-500"
-            />
+        <div
+          class="flex flex-col md:flex-row md:justify-between md:items-start"
+        >
+          <!-- Contact Information -->
+          <div class="max-w-lg mx-auto md:w-1/2 mb-8 md:mb-0 *:text-center">
+            <p class="text-lg mb-3 mt-4 font-semibold">Contact Information:</p>
+            <ul class="dark:text-gray-400 text-black">
+              <li>
+                <strong class="dark:text-gray-300">Email:</strong>
+                example@example.com
+              </li>
+              <li>
+                <strong class="dark:text-gray-300">Address:</strong> 123 Street,
+                City, Country
+              </li>
+            </ul>
+            <p class="text-lg mb-2 mt-6 font-semibold">Connect on:</p>
+            <ul class="flex justify-center text-2xl md:text-3xl xl:text-4xl">
+              <li class="mx-3">
+                <a
+                  href="#"
+                  class="text-blue-900 dark:text-blue-700 hover:text-blue-800 dark:hover:text-blue-600"
+                  ><i class="fab fa-linkedin duration-100 hover:scale-110"></i
+                ></a>
+              </li>
+              <li class="mx-3">
+                <a
+                  href="#"
+                  class="text-blue-600 hover:text-blue-700 dark:hover:text-blue-500"
+                  ><i class="fab fa-facebook duration-100 hover:scale-110"></i
+                ></a>
+              </li>
+              <li class="mx-3">
+                <a
+                  href="#"
+                  class="text-gray-700 dark:text-black hover:text-black dark:hover:text-white"
+                  ><i class="fab fa-github duration-100 hover:scale-110"></i
+                ></a>
+              </li>
+            </ul>
           </div>
-          <div class="mb-6">
-            <input
-              type="email"
-              placeholder="Your Email"
-              class="block w-full bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600 border-gray-400 dark:focus:ring-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-200 focus:border-gray-500"
-            />
-          </div>
-          <div class="mb-6">
-            <textarea
-              rows="5"
-              placeholder="Your Message"
-              class="block w-full bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600 border-gray-400 dark:focus:ring-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-gray-200 focus:border-gray-500"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            class="bg-blue-500 text-white active:bg-blue-600 dark:bg-gray-800 dark:text-white font-bold uppercase text-lg px-8 py-3 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 w-full"
-          >
-            Send Message
-          </button>
-        </form>
+          <!-- Contact Form -->
+          <form class="max-w-lg w-11/12 mx-auto md:w-1/2">
+            <div class="mb-6">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="block w-full bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600 border-gray-400 dark:focus:ring-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-cyan-400 focus:border-gray-500"
+              />
+            </div>
+            <div class="mb-6">
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="block w-full bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600 border-gray-400 dark:focus:ring-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-cyan-400 focus:border-gray-500"
+              />
+            </div>
+            <div class="mb-6">
+              <textarea
+                rows="5"
+                placeholder="Your Message"
+                class="block w-full bg-white dark:bg-gray-800 dark:text-white dark:border-gray-600 border-gray-400 dark:focus:ring-gray-400 rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-cyan-400 focus:border-gray-500"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="bg-blue-500 text-white active:bg-blue-600 dark:bg-gray-800 dark:text-white font-bold uppercase px-8 py-3 rounded-full shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 w-2/3 max-w-xs"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -250,16 +293,6 @@
         <p>&copy; 2024 Software Developer Portfolio. All rights reserved.</p>
       </div>
     </footer>
-
-    <!-- JavaScript for mobile navigation -->
-    <script>
-      const navToggle = document.getElementById("nav-toggle");
-      const navContent = document.getElementById("nav-content");
-
-      navToggle.addEventListener("click", () => {
-        navContent.classList.toggle("hidden");
-      });
-    </script>
 
     <!-- Templates for javascript code -->
     <!-- Project Card Templates -->
@@ -310,7 +343,7 @@
                 <!-- Description about the project -->
               </p>
               <div
-                class="flex px-4 gap-2 text-2xl xl:text-3xl flex-wrap project-tech"
+                class="flex px-4 gap-2 text-2xl xl:text-4xl flex-wrap project-tech"
               >
                 <!-- Icons for the technologies used -->
               </div>

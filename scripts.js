@@ -101,6 +101,19 @@ function init() {
     new_skill(`Skill ${i + 1}`, 2 * i < data.projects.length);
   }
 
+  // Tailwind CSS dark mode
+  tailwind.config = {
+    darkMode: "selector",
+  };
+
+  // Mobile navigation toggle
+  const navToggle = document.getElementById("nav-toggle");
+  const navContent = document.getElementById("nav-content");
+
+  navToggle.addEventListener("click", () => {
+    navContent.classList.toggle("hidden");
+  });
+
   console.log("Script loaded");
 }
 
