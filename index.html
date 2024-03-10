@@ -127,6 +127,7 @@
             class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4"
             data-aos="fade"
             data-aos-duration="1400"
+            data-aos-anchor="#home"
           >
             Hello there,
           </h1>
@@ -140,6 +141,7 @@
             data-aos="fade"
             data-aos-duration="1400"
             data-aos-delay="2500"
+            data-aos-anchor="#home"
             >View Projects</a
           >
         </div>
@@ -479,27 +481,23 @@
     </template>
     <!-- Skill Block templates -->
     <!-- Skill proficient -->
-    <template id="skill-proficient-template">
-      <li
-        class="flex items-center bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-300 font-bold py-2 px-4 rounded-lg shadow-lg"
-        data-aos="fade-zoom-in"
+    <template id="skill-proficient-svg">
+      <svg
+        class="w-6 h-6 mr-2 fill-current text-green-500"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
       >
-        <svg
-          class="w-6 h-6 mr-2 fill-current text-green-500"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-        >
-          <path d="M0 0h24v24H0z" fill="none" />
-          <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
-        </svg>
-        <!-- Skill name -->
-      </li>
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" />
+      </svg>
     </template>
+    <!-- Skill name -->
     <!-- Skill learning -->
-    <template id="skill-learning-template">
+    <template id="skill-template">
       <li
         class="flex items-center bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-300 font-bold py-2 px-4 rounded-lg shadow-lg"
         data-aos="fade-zoom-in"
+        data-aos-duration="400"
       >
         <svg
           class="w-6 h-6 mr-2 fill-current text-indigo-500 animate-spin"

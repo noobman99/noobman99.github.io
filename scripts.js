@@ -82,21 +82,28 @@ function new_project_desktop(data, number) {
   document.getElementById("projects-desktop").appendChild(clone_desktop);
 }
 
-function new_skill(skill, isProficient, number) {
-  let skill_template;
-  if (isProficient) {
-    skill_template = document.getElementById("skill-proficient-template");
-  } else {
-    skill_template = document.getElementById("skill-learning-template");
-  }
+function new_skill(skill_name, number) {
+  let skill_template = document.getElementById("skill-template");
+
+  let skill_proficient = document.getElementById("skill-proficient-svg");
 
   let clone_skill = skill_template.content.cloneNode(true);
+
   let skill_span = document.createElement("span");
-  skill_span.textContent = skill;
-  clone_skill.querySelector("li").appendChild(skill_span);
-  clone_skill
-    .querySelector("li")
-    .setAttribute("data-aos-delay", `${number * 200}`);
+  skill_span.textContent = skill_name;
+
+  let skill = clone_skill.querySelector("li");
+  skill.appendChild(skill_span);
+  skill.setAttribute("data-aos-delay", `${number * 150}`);
+  let skill_svg = skill.querySelector("svg");
+
+  function replaceSVG() {
+    setTimeout(() => {
+      skill_svg.replaceWith(skill_proficient.content.cloneNode(true));
+    }, 100);
+  }
+
+  skill.addEventListener("transitionend", replaceSVG, { once: true });
 
   document.getElementById("skills-container").appendChild(clone_skill);
 }
@@ -132,7 +139,7 @@ function init() {
 
   // Add Skills
   for (let i = 0; i < data.skills.proficient.length; i++) {
-    new_skill(data.skills.proficient[i], true, i + 1);
+    new_skill(data.skills.proficient[i], i + 1);
   }
 
   AOS.init({
