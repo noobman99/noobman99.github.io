@@ -1,0 +1,54 @@
+{
+  "projects": [
+    {
+      "title": "MyKhata App",
+      "short_description": "A simple web app to keep track of your day to day expenses.",
+      "description": "Made in React, using MongoDB and Azure SQL databases and Express.js for backend. Project is still in development.",
+      "image": "./assets/khata.png",
+      "alt": "My Khata",
+      "link": "https://mykhata.vercel.app/",
+      "tech": [
+        "fab fa-html5",
+        "fab fa-css3-alt",
+        "fab fa-js",
+        "fab fa-react",
+        "fab fa-node-js"
+      ]
+    },
+    {
+      "title": "TicTacToe",
+      "short_description": "My first project in React. A simple TicTacToe game :)",
+      "description": "A simple TicTacToe game made using React. It was my first project in React and I learned a lot from it.",
+      "image": "https://noobman99.github.io/TicTacToe/favicon.png",
+      "alt": "TicTacToe",
+      "link": "https://github.com/noobman99/TicTacToe",
+      "tech": ["fab fa-html5", "fab fa-css3-alt", "fab fa-js", "fab fa-react"]
+    },
+    {
+      "title": "GenWraps",
+      "short_description": "A simple method to wrap your python generators for replenishable iterators.",
+      "description": "This module provides simple classes to wrap your python generator code and produce multiple same state iterators. Used to avoid multiple generator calls.",
+      "image": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png",
+      "alt": "GenWraps",
+      "link": "https://github.com/noobman99/genwraps/",
+      "tech": ["fab fa-python", "fab fa-github"]
+    }
+  ],
+  "skills": {
+    "proficient": [
+      "C",
+      "C++",
+      "HTML 5",
+      "CSS 3",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Express",
+      "Python",
+      "MongoDB",
+      "SQL",
+      "Git",
+      "Bash"
+    ]
+  }
+}

@@ -121,15 +121,19 @@ function typingEffect() {
 function init() {
   console.log("Starting script");
 
+  // Add Projects
   for (let i = 0; i < data.projects.length; i++) {
     new_project_mobile(data.projects[i]);
     new_project_desktop(data.projects[i], i + 1);
-    new_skill(`Skill ${i + 1}`, 2 * i < data.projects.length, i + 1);
   }
-
   const EOJ = document.getElementById("project-template-EOJ");
   const EOJ_clone = EOJ.content.cloneNode(true);
   document.getElementById("projects-desktop").appendChild(EOJ_clone);
+
+  // Add Skills
+  for (let i = 0; i < data.skills.proficient.length; i++) {
+    new_skill(data.skills.proficient[i], true, i + 1);
+  }
 
   AOS.init({
     duration: 600,
