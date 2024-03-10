@@ -3,7 +3,7 @@
     {
       "title": "MyKhata App",
       "short_description": "A simple web app to keep track of your day to day expenses.",
-      "description": "Made in React, using MongoDB and Azure SQL databases and Express.js for backend. Project is still in development.",
+      "description": "Made in React, using MongoDB and Azure SQL databases and Express.js for backend. This project is still a work in development.",
       "image": "./assets/khata.png",
       "alt": "My Khata",
       "link": "https://mykhata.vercel.app/",
