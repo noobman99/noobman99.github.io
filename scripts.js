@@ -125,8 +125,38 @@ function typingEffect() {
   setTimeout(typeWriter, speed);
 }
 
+function submitForm() {
+  let form = document.getElementById("contact-form");
+
+  let data = new FormData(form);
+  data = Object.fromEntries(data.entries());
+
+  let url =
+    "https://script.google.com/macros/s/AKfycbzDn4APmXzAYuuVRd22ev5DFzncFxHfnwC-fuoXg8N-gfrUPYbws_2jcUSc7QfEtZmN/exec";
+
+  fetch(url, {
+    redirect: "follow",
+    method: "POST",
+    contentType: "text/plain",
+    cors: "no-cors",
+    body: JSON.stringify(data),
+  })
+    .then((response) => {
+      if (response.status === 200) {
+        form.reset();
+        alert("Message sent successfully!");
+      } else {
+        alert("There was an error sending your message. Please try again.");
+      }
+    })
+    .catch((error) => {
+      // console.error("Error:", error);
+      alert("There was an error sending your message. Please try again.");
+    });
+}
+
 function init() {
-  console.log("Starting script");
+  // console.log("Starting script");
 
   // Add Projects
   for (let i = 0; i < data.projects.length; i++) {
@@ -162,7 +192,14 @@ function init() {
     navContent.classList.toggle("hidden");
   });
 
-  console.log("Script loaded");
+  // Form submission
+  const form = document.getElementById("contact-form");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    submitForm();
+  });
+
+  // console.log("Script loaded");
 }
 
 document.addEventListener("DOMContentLoaded", init);
