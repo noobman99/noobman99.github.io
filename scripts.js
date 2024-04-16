@@ -205,6 +205,16 @@ function init() {
   email.textContent = mail;
   email.href = `mailto:${mail}`;
 
+  // dark light toggle
+  const checkbox = document.getElementById("theme-toggle");
+  const checkbox_label = document.getElementById("theme-toggle-label");
+  checkbox.addEventListener("change", () => {
+    console.log("Theme changed");
+    document.documentElement.classList.toggle("dark");
+    checkbox_label.classList.toggle("fa-moon");
+    checkbox_label.classList.toggle("fa-sun");
+  });
+
   // console.log("Script loaded");
 }
 

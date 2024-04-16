@@ -109,3 +109,7 @@ nav a:hover::after {
 .fa-map-location-dot {
   color: #306998;
 }
+
+.fa-sun {
+  color: #ffb300;
+}
