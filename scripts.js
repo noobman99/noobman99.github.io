@@ -199,6 +199,12 @@ function init() {
     submitForm();
   });
 
+  // add email ID
+  const email = document.getElementById("mail-id");
+  const mail = "psp90804@gmail.com";
+  email.textContent = mail;
+  email.href = `mailto:${mail}`;
+
   // console.log("Script loaded");
 }
 
