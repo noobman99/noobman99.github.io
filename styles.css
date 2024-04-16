@@ -104,3 +104,8 @@ nav a:hover::after {
 .fa-python {
   color: #306998;
 }
+
+/* map location */
+.fa-map-location-dot {
+  color: #306998;
+}

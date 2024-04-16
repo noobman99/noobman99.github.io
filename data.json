@@ -1,6 +1,31 @@
 {
   "projects": [
     {
+      "title": "Resume Parser",
+      "short_description": "A simple project to parse resumes and extract information.",
+      "description": "A fun learning project to parse resumes and extract information and make it downloadable in excel format. Made using Flask.",
+      "image": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png",
+      "alt": "Resume Parser",
+      "link": "https://github.com/noobman99/Resume-parser",
+      "tech": ["fab fa-html5", "fab fa-css3-alt", "fab fa-js", "fab fa-python"]
+    },
+    {
+      "title": "Food Delivery Service App",
+      "short_description": "A simple web app for food delivery service.",
+      "description": "A web app with customer, restaurant, delivery agent and admin interfaces. Made using MERN stack.",
+      "image": "./assets/fdms.png",
+      "alt": "Food Delivery Service",
+      "link": "https://github.com/noobman99/Food-Delivery-Service-Management-Software",
+      "tech": [
+        "fab fa-html5",
+        "fab fa-css3-alt",
+        "fab fa-js",
+        "fab fa-react",
+        "fab fa-node-js",
+        "fas fa-map-location-dot"
+      ]
+    },
+    {
       "title": "MyKhata App",
       "short_description": "A simple web app to keep track of your day to day expenses.",
       "description": "Made in React, using MongoDB and Azure SQL databases and Express.js for backend. This project is still a work in development.",
@@ -14,6 +39,24 @@
         "fab fa-react",
         "fab fa-node-js"
       ]
+    },
+    {
+      "title": "NSSC Website",
+      "short_description": "Contributed to website for Space Fest, National Students' Space Challenge held at IIT Kharagpur.",
+      "description": "Contributed in making frontend for the website of National Students' Space Challenge held at IIT Kharagpur.",
+      "image": "https://nssc.in/assets/img/landing/FB%20profile%20(2).png",
+      "alt": "NSSC",
+      "link": "https://nssc.in",
+      "tech": ["fab fa-html5", "fab fa-css3-alt", "fab fa-js", "fab fa-react"]
+    },
+    {
+      "title": "spAts Website",
+      "short_description": "Contributed to website for Space Technology Students' Society, IIT Kharagpur.",
+      "description": "Contributed to make a React based website for Space Technology Students' Society, IIT Kharagpur.",
+      "image": "https://spats.co.in/img/logo-spats.png",
+      "alt": "spAts",
+      "link": "https://spats.co.in/",
+      "tech": ["fab fa-html5", "fab fa-css3-alt", "fab fa-js", "fab fa-react"]
     },
     {
       "title": "TicTacToe",
@@ -40,15 +83,22 @@
       "C++",
       "HTML 5",
       "CSS 3",
+      "TailwindCSS",
       "JavaScript",
-      "React",
-      "Node.js",
-      "Express",
+      "React.js",
+      "NodeJs",
+      "Express.js",
       "Python",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Selenium",
       "MongoDB",
       "SQL",
       "Git",
-      "Bash"
+      "Bash",
+      "Postman",
+      "Azure"
     ]
   }
 }
