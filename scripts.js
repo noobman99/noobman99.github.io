@@ -1,4 +1,4 @@
-import data from "./data.json" assert { type: "json" };
+// import data from "./data.json" assert { type: "json" };
 
 function new_project_mobile(data) {
   let template = document.getElementById("project-template-mobile");
@@ -155,8 +155,11 @@ function submitForm() {
     });
 }
 
-function init() {
+async function init() {
   // console.log("Starting script");
+
+  const data_res = await fetch("/data.json");
+  const data = await data_res.json();
 
   // Add Projects
   for (let i = 0; i < data.projects.length; i++) {
