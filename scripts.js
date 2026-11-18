@@ -94,7 +94,8 @@ function new_skill(skill_name, number) {
 
   let skill = clone_skill.querySelector("li");
   skill.appendChild(skill_span);
-  skill.setAttribute("data-aos-delay", `${number * 150}`);
+  // inline delay: AOS CSS only defines data-aos-delay values up to 3000ms
+  skill.style.transitionDelay = `${number * 100}ms`;
   let skill_svg = skill.querySelector("svg");
 
   function replaceSVG() {

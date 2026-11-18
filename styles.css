@@ -113,3 +113,20 @@ nav a:hover::after {
 .fa-sun {
   color: #ffb300;
 }
+
+/* Colors for the remaining tech icons (scoped so nav/social icons keep their color) */
+.project-tech .fa-chrome { color: #4285f4; }
+.project-tech .fa-google { color: #ea4335; }
+.project-tech .fa-docker { color: #2496ed; }
+.project-tech .fa-windows { color: #0078d4; }
+.project-tech .fa-linux { color: #e8a400; }
+.project-tech .fa-github { color: #6e7681; }
+.project-tech .fa-database { color: #336791; }
+.project-tech .fa-server { color: #64748b; }
+.project-tech .fa-network-wired { color: #6366f1; }
+.project-tech .fa-wifi { color: #0ea5e9; }
+.project-tech .fa-brain { color: #e91e63; }
+.project-tech .fa-microchip { color: #10b981; }
+.project-tech .fa-shield-halved { color: #8b5cf6; }
+.project-tech .fa-lock { color: #f59e0b; }
+.project-tech .fa-trophy { color: #fbbf24; }
