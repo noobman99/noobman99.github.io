@@ -1,34 +1,6 @@
 {
   "projects": [
     {
-      "title": "WiFi Optimization with RL",
-      "short_description": "Team competition project: a reinforcement learning agent that tunes WiFi networks simulated in ns-3.",
-      "description": "Extended ns-3 with custom C++ modules that stream network metrics over Kafka to a PyTorch RL agent, which sends optimization commands back into the running simulation. Includes a visualization frontend.",
-      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/cplusplus/cplusplus-original.svg",
-      "alt": "WiFi Optimization with RL",
-      "link": "",
-      "tech": [
-        "fas fa-network-wired",
-        "fas fa-brain",
-        "fab fa-python",
-        "fab fa-docker",
-        "fas fa-wifi"
-      ]
-    },
-    {
-      "title": "Quantum Safe DTLS 1.3",
-      "short_description": "Team competition project: post-quantum DTLS 1.3 on RISC-V IoT devices.",
-      "description": "Optimized post-quantum cryptography for DTLS 1.3 handshakes on RISC-V based IoT hardware, with simulation, benchmarking and a DTLS server setup.",
-      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/c/c-original.svg",
-      "alt": "Quantum Safe DTLS 1.3",
-      "link": "https://github.com/noobman99/pqc_optimization",
-      "tech": [
-        "fas fa-shield-halved",
-        "fas fa-microchip",
-        "fas fa-lock"
-      ]
-    },
-    {
       "title": "Distributed File System",
       "short_description": "A GFS-inspired distributed file system with Raft replication.",
       "description": "Built with Python asyncio and gRPC. It has a hierarchical namespace, a master node, per-block Raft replication across chunk servers and automatic failure detection.",
@@ -39,21 +11,8 @@
         "fab fa-python",
         "fas fa-server",
         "fas fa-network-wired"
-      ]
-    },
-    {
-      "title": "Contest Tracker",
-      "short_description": "A small site that tracks upcoming competitive programming contests.",
-      "description": "Scrapes Codeforces, CodeChef and AtCoder for upcoming contests, stores them in SQLite and serves them from a Flask single-page app.",
-      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flask/flask-original.svg",
-      "alt": "Contest Tracker",
-      "link": "https://contest-tracker-zhu2.onrender.com/",
-      "tech": [
-        "fab fa-python",
-        "fab fa-html5",
-        "fas fa-database",
-        "fas fa-trophy"
-      ]
+      ],
+      "date": "Apr 2026 – May 2026"
     },
     {
       "title": "FShare",
@@ -67,7 +26,8 @@
         "fas fa-network-wired",
         "fab fa-linux",
         "fab fa-windows"
-      ]
+      ],
+      "date": "Apr 2026"
     },
     {
       "title": "Gmail Declutterer",
@@ -81,7 +41,53 @@
         "fab fa-js",
         "fab fa-google",
         "fab fa-css3-alt"
-      ]
+      ],
+      "date": "Mar 2026"
+    },
+    {
+      "title": "Quantum Safe DTLS 1.3",
+      "short_description": "Team competition project: post-quantum DTLS 1.3 on RISC-V IoT devices.",
+      "description": "Optimized post-quantum cryptography for DTLS 1.3 handshakes on RISC-V based IoT hardware, with simulation, benchmarking and a DTLS server setup.",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/c/c-original.svg",
+      "alt": "Quantum Safe DTLS 1.3",
+      "link": "https://github.com/noobman99/pqc_optimization",
+      "tech": [
+        "fas fa-shield-halved",
+        "fas fa-microchip",
+        "fas fa-lock"
+      ],
+      "date": "Dec 2025"
+    },
+    {
+      "title": "WiFi Optimization with RL",
+      "short_description": "Team competition project: a reinforcement learning agent that tunes WiFi networks simulated in ns-3.",
+      "description": "Extended ns-3 with custom C++ modules that stream network metrics over Kafka to a PyTorch RL agent, which sends optimization commands back into the running simulation. Includes a visualization frontend.",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/cplusplus/cplusplus-original.svg",
+      "alt": "WiFi Optimization with RL",
+      "link": "",
+      "tech": [
+        "fas fa-network-wired",
+        "fas fa-brain",
+        "fab fa-python",
+        "fab fa-docker",
+        "fas fa-wifi"
+      ],
+      "date": "Nov 2025 – Dec 2025"
+    },
+    {
+      "title": "Contest Tracker",
+      "short_description": "A small site that tracks upcoming competitive programming contests.",
+      "description": "Scrapes Codeforces, CodeChef and AtCoder for upcoming contests, stores them in SQLite and serves them from a Flask single-page app.",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flask/flask-original.svg",
+      "alt": "Contest Tracker",
+      "link": "https://contest-tracker-zhu2.onrender.com/",
+      "tech": [
+        "fab fa-python",
+        "fab fa-html5",
+        "fas fa-database",
+        "fas fa-trophy"
+      ],
+      "date": "May 2025"
     },
     {
       "title": "Resume Parser",
@@ -95,7 +101,8 @@
         "fab fa-css3-alt",
         "fab fa-js",
         "fab fa-python"
-      ]
+      ],
+      "date": "Apr 2024"
     },
     {
       "title": "Food Delivery Service App",
@@ -111,7 +118,8 @@
         "fab fa-react",
         "fab fa-node-js",
         "fas fa-map-location-dot"
-      ]
+      ],
+      "date": "Mar 2024 – Apr 2024"
     },
     {
       "title": "MyKhata App",
@@ -126,7 +134,8 @@
         "fab fa-js",
         "fab fa-react",
         "fab fa-node-js"
-      ]
+      ],
+      "date": "Oct 2023 – Present"
     },
     {
       "title": "NSSC Website",
@@ -140,7 +149,8 @@
         "fab fa-css3-alt",
         "fab fa-js",
         "fab fa-react"
-      ]
+      ],
+      "date": "Aug 2023 - Sep 2023"
     },
     {
       "title": "spAts Website",
@@ -154,7 +164,8 @@
         "fab fa-css3-alt",
         "fab fa-js",
         "fab fa-react"
-      ]
+      ],
+      "date": "May 2023 - Nov 2023"
     },
     {
       "title": "TicTacToe",
@@ -168,7 +179,8 @@
         "fab fa-css3-alt",
         "fab fa-js",
         "fab fa-react"
-      ]
+      ],
+      "date": "Mar 2023 – Apr 2023"
     },
     {
       "title": "GenWraps",
@@ -180,7 +192,8 @@
       "tech": [
         "fab fa-python",
         "fab fa-github"
-      ]
+      ],
+      "date": "Sep 2021"
     },
     {
       "title": "Meet-start",
@@ -193,7 +206,8 @@
         "fab fa-python",
         "fab fa-telegram",
         "fas fa-video"
-      ]
+      ],
+      "date": "Sep 2021"
     }
   ],
   "skills": {

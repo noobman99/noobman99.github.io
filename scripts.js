@@ -1,5 +1,11 @@
 // import data from "./data.json" assert { type: "json" };
 
+function set_date(clone, date) {
+  let el = clone.querySelector(".project-date");
+  if (date) el.textContent = date;
+  else el.remove();
+}
+
 function new_project_mobile(data) {
   let template = document.getElementById("project-template-mobile");
 
@@ -13,6 +19,7 @@ function new_project_mobile(data) {
   let h3 = clone_mobile.querySelectorAll("h3");
   h3[0].textContent = data.title;
   h3[1].textContent = data.title;
+  set_date(clone_mobile, data.date);
   clone_mobile.querySelector(".project-description").textContent =
     data.short_description + " " + data.description;
   let a = clone_mobile.querySelectorAll("a");
@@ -48,6 +55,7 @@ function new_project_desktop(data, number) {
   for (let i = 0; i < sdesc.length; i++) {
     sdesc[i].textContent = data.short_description;
   }
+  set_date(clone_desktop, data.date);
   clone_desktop.querySelector(".project-description").textContent =
     data.description;
   let a = clone_desktop.querySelectorAll("a");
@@ -63,6 +71,10 @@ function new_project_desktop(data, number) {
   });
 
   let project_card = clone_desktop.querySelector(".project-card");
+  // date sits in the spacer opposite the card; align it toward the timeline
+  let date_el = project_card.querySelector(".project-date");
+  if (date_el)
+    date_el.parentElement.classList.add(number % 2 ? "text-left" : "text-right");
   if (number % 2) {
     project_card.classList.add("flex-row-reverse");
     project_card.classList.add("left-timeline");

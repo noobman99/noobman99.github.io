@@ -396,7 +396,11 @@
         class="mb-8 flex justify-between items-center w-full project-card"
         data-aos="fade-up"
       >
-        <div class="order-1 w-5/12"></div>
+        <div class="order-1 w-5/12 px-6">
+          <p
+            class="project-date inline-block px-4 py-1 rounded-lg shadow-lg bg-white dark:bg-gray-800 text-base font-semibold text-gray-700 dark:text-gray-300"
+          ></p>
+        </div>
         <div
           class="z-20 flex items-center order-1 bg-gray-800 dark:bg-gray-800 shadow-xl w-8 h-8 rounded-full"
         >
@@ -486,11 +490,11 @@
     </template>
     <!-- Mobile View -->
     <template id="project-template-mobile">
-      <div
-        class="flip-card flip-Y max-w-sm w-11/12"
-        data-aos="fade-up"
-        data-aos-delay="0"
-      >
+      <div class="max-w-sm w-11/12" data-aos="fade-up" data-aos-delay="0">
+      <p
+        class="project-date inline-block mb-3 px-3 py-1 rounded-lg shadow bg-white dark:bg-gray-800 text-sm font-semibold text-gray-700 dark:text-gray-300"
+      ></p>
+      <div class="flip-card flip-Y w-full">
         <div class="flip-card-inner w-full">
           <div
             class="flip-card-front bg-white dark:bg-gray-800 dark:text-white rounded-lg shadow-lg overflow-hidden w-full"
@@ -545,6 +549,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
     </template>
     <!-- Skill Block templates -->
