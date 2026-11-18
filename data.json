@@ -181,6 +181,19 @@
         "fab fa-python",
         "fab fa-github"
       ]
+    },
+    {
+      "title": "Meet-start",
+      "short_description": "Automatically joins your scheduled Zoom and Google Meet meetings.",
+      "description": "Parses meeting links and timings from pasted text, stores the schedule locally, and auto-joins at the right time by clicking through Zoom and Google Meet with PyAutoGUI. Includes a Telegram bot to add, list, remove and start meetings remotely.",
+      "image": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png",
+      "alt": "Meet-start",
+      "link": "https://github.com/noobman99/Meet-start",
+      "tech": [
+        "fab fa-python",
+        "fab fa-telegram",
+        "fas fa-video"
+      ]
     }
   ],
   "skills": {
