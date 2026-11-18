@@ -1,18 +1,106 @@
 {
   "projects": [
     {
+      "title": "WiFi Optimization with RL",
+      "short_description": "Team competition project: a reinforcement learning agent that tunes WiFi networks simulated in ns-3.",
+      "description": "Extended ns-3 with custom C++ modules that stream network metrics over Kafka to a PyTorch RL agent, which sends optimization commands back into the running simulation. Includes a visualization frontend.",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/cplusplus/cplusplus-original.svg",
+      "alt": "WiFi Optimization with RL",
+      "link": "",
+      "tech": [
+        "fas fa-network-wired",
+        "fas fa-brain",
+        "fab fa-python",
+        "fab fa-docker",
+        "fas fa-wifi"
+      ]
+    },
+    {
+      "title": "Quantum Safe DTLS 1.3",
+      "short_description": "Team competition project: post-quantum DTLS 1.3 on RISC-V IoT devices.",
+      "description": "Optimized post-quantum cryptography for DTLS 1.3 handshakes on RISC-V based IoT hardware, with simulation, benchmarking and a DTLS server setup.",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/c/c-original.svg",
+      "alt": "Quantum Safe DTLS 1.3",
+      "link": "https://github.com/noobman99/pqc_optimization",
+      "tech": [
+        "fas fa-shield-halved",
+        "fas fa-microchip",
+        "fas fa-lock"
+      ]
+    },
+    {
+      "title": "Distributed File System",
+      "short_description": "A GFS-inspired distributed file system with Raft replication.",
+      "description": "Built with Python asyncio and gRPC. It has a hierarchical namespace, a master node, per-block Raft replication across chunk servers and automatic failure detection.",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg",
+      "alt": "Distributed File System",
+      "link": "https://github.com/RG-04/dfs",
+      "tech": [
+        "fab fa-python",
+        "fas fa-server",
+        "fas fa-network-wired"
+      ]
+    },
+    {
+      "title": "Contest Tracker",
+      "short_description": "A small site that tracks upcoming competitive programming contests.",
+      "description": "Scrapes Codeforces, CodeChef and AtCoder for upcoming contests, stores them in SQLite and serves them from a Flask single-page app.",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/flask/flask-original.svg",
+      "alt": "Contest Tracker",
+      "link": "https://contest-tracker-zhu2.onrender.com/",
+      "tech": [
+        "fab fa-python",
+        "fab fa-html5",
+        "fas fa-database",
+        "fas fa-trophy"
+      ]
+    },
+    {
+      "title": "FShare",
+      "short_description": "Parallel file transfer that uses no temporary files.",
+      "description": "Streams files or whole directories over LAN or WAN with multiple parallel threads, IDM-style, without creating intermediate zip or temp files on either side. Supports optional compression and uses only the Python standard library.",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg",
+      "alt": "FShare",
+      "link": "https://github.com/noobman99/fshare",
+      "tech": [
+        "fab fa-python",
+        "fas fa-network-wired",
+        "fab fa-linux",
+        "fab fa-windows"
+      ]
+    },
+    {
+      "title": "Gmail Declutterer",
+      "short_description": "Chrome extension to find and bulk delete emails from your biggest senders.",
+      "description": "Scans your Gmail inbox through the official Gmail API with OAuth, groups emails by sender, and lets you bulk-delete them.",
+      "image": "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/chrome/chrome-original.svg",
+      "alt": "Gmail Declutterer",
+      "link": "https://github.com/noobman99/gmail-declutter-extension",
+      "tech": [
+        "fab fa-chrome",
+        "fab fa-js",
+        "fab fa-google",
+        "fab fa-css3-alt"
+      ]
+    },
+    {
       "title": "Resume Parser",
       "short_description": "A simple project to parse resumes and extract information.",
       "description": "A fun learning project to parse resumes and extract information and make it downloadable in excel format. Made using Flask.",
       "image": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png",
       "alt": "Resume Parser",
       "link": "https://github.com/noobman99/Resume-parser",
-      "tech": ["fab fa-html5", "fab fa-css3-alt", "fab fa-js", "fab fa-python"]
+      "tech": [
+        "fab fa-html5",
+        "fab fa-css3-alt",
+        "fab fa-js",
+        "fab fa-python"
+      ]
     },
     {
       "title": "Food Delivery Service App",
       "short_description": "A simple web app for food delivery service.",
-      "description": "A web app with customer, restaurant, delivery agent and admin interfaces. Made using MERN stack.",
+      "description": "A web app with customer, restaurant, delivery agent and admin interfaces. Made using MERN stack with JWT auth, Razorpay payments and TomTom maps.",
       "image": "./assets/fdms.png",
       "alt": "Food Delivery Service",
       "link": "https://github.com/noobman99/Food-Delivery-Service-Management-Software",
@@ -27,11 +115,11 @@
     },
     {
       "title": "MyKhata App",
-      "short_description": "A simple web app to keep track of your day to day expenses.",
-      "description": "Made in React, using MongoDB and Azure SQL databases and Express.js for backend. This project is still a work in development.",
+      "short_description": "A web app to keep track of your day to day expenses.",
+      "description": "Track transactions by category with spend limits and a dashboard, record money lent to and borrowed from friends, and split expenses in groups that others can join by invite link or QR code. Installable as a PWA.",
       "image": "./assets/khata.png",
       "alt": "My Khata",
-      "link": "https://mykhata.vercel.app/",
+      "link": "https://khata-new.vercel.app/",
       "tech": [
         "fab fa-html5",
         "fab fa-css3-alt",
@@ -44,10 +132,15 @@
       "title": "NSSC Website",
       "short_description": "Contributed to website for Space Fest, National Students' Space Challenge held at IIT Kharagpur.",
       "description": "Contributed in making frontend for the website of National Students' Space Challenge held at IIT Kharagpur.",
-      "image": "https://nssc.in/assets/img/landing/FB%20profile%20(2).png",
+      "image": "https://nssc.in/favicon.ico",
       "alt": "NSSC",
       "link": "https://nssc.in",
-      "tech": ["fab fa-html5", "fab fa-css3-alt", "fab fa-js", "fab fa-react"]
+      "tech": [
+        "fab fa-html5",
+        "fab fa-css3-alt",
+        "fab fa-js",
+        "fab fa-react"
+      ]
     },
     {
       "title": "spAts Website",
@@ -56,7 +149,12 @@
       "image": "https://spats.co.in/img/logo-spats.png",
       "alt": "spAts",
       "link": "https://spats.co.in/",
-      "tech": ["fab fa-html5", "fab fa-css3-alt", "fab fa-js", "fab fa-react"]
+      "tech": [
+        "fab fa-html5",
+        "fab fa-css3-alt",
+        "fab fa-js",
+        "fab fa-react"
+      ]
     },
     {
       "title": "TicTacToe",
@@ -65,7 +163,12 @@
       "image": "https://noobman99.github.io/TicTacToe/favicon.png",
       "alt": "TicTacToe",
       "link": "https://github.com/noobman99/TicTacToe",
-      "tech": ["fab fa-html5", "fab fa-css3-alt", "fab fa-js", "fab fa-react"]
+      "tech": [
+        "fab fa-html5",
+        "fab fa-css3-alt",
+        "fab fa-js",
+        "fab fa-react"
+      ]
     },
     {
       "title": "GenWraps",
@@ -74,7 +177,10 @@
       "image": "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/community/logos/python-logo-only.png",
       "alt": "GenWraps",
       "link": "https://github.com/noobman99/genwraps/",
-      "tech": ["fab fa-python", "fab fa-github"]
+      "tech": [
+        "fab fa-python",
+        "fab fa-github"
+      ]
     }
   ],
   "skills": {
@@ -98,7 +204,18 @@
       "Git",
       "Bash",
       "Postman",
-      "Azure"
+      "Azure",
+      "TypeScript",
+      "Next.js",
+      "Flask",
+      "FastAPI",
+      "PostgreSQL",
+      "SQLite",
+      "Docker",
+      "gRPC",
+      "Kafka",
+      "PyTorch",
+      "Linux"
     ]
   }
 }
